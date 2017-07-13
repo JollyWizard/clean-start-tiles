@@ -13,7 +13,7 @@ Thanks to apparently prolific work of some German dude, copious copypasta exists
 
 * a properly configured Powershell, in advance,
 * familiarity with ad-hoc Powershell development,
-* the user explicitly naming each tile to be removed (without a hint of how to identify the proper id.
+* the user explicitly naming each tile to be removed (without a hint of how to browse the proper ids).
 * the shameless violation of DRY as magic stings are plastered across conditionals.  
 
 All of which is fine for building system images, but it in no way meets the needs of the highly mobile admistrator who actually works with normal consumer systems outside the ivory tower of enterprise (e.g. the Harry Tuttle).
@@ -30,6 +30,7 @@ Go forth and be free.
   * e.g. right-click file menu -> `Run with Powershell`.
   * e.g. terminal -> `powershell ./clean-start-tiles.ps1`
   * etc.
+* Enter `y` to confirm that all tiles should be unpinned.
 
 ## Permission Helpers
 
@@ -47,3 +48,5 @@ To use this tool, you need to make sure script permission is enabled.
 * Only works with tiles registered under the COM Application clsid. Other types of tiles exist, but their location / clsid is currently unknown.
 
 * Only works in english (by default).  To localize, change the `$UNPIN_LABEL` in the module file to whatever the right-click option to unpin from start says.
+
+* No undo (yet). If you confirm the action, you will need to repin any pins you do want by hand.
