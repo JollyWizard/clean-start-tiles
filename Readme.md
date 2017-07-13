@@ -22,6 +22,8 @@ This is my attempt to solve that crisis, so that users might survive the oversig
 
 Go forth and be free.
 
+:: Jolly Wizard
+
 ## Usage
 
 * Ensure powershell scripts [have permission to run](#permission-helpers).
@@ -41,7 +43,7 @@ To use this tool, you need to make sure script permission is enabled.
 `.bat` scripts are included to enable and disable script permission at the *user level*.
 
 * Run `ps.scripts.enable.bat` to **enable powershell script execution.**
-* Run `ps.scripts.disable.bat` to **disbale powershell script execution.**
+* Run `ps.scripts.disable.bat` to **disable powershell script execution.**
 
 ## Known Issues
 
