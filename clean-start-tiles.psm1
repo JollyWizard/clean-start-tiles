@@ -89,7 +89,7 @@ function Use-Guard([string]$prompt)
 function Remove-StartTiles
 {
   param(
-    $q = 0
+    $y = 0
   )
 
   Show-UnpinnableApps
