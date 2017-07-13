@@ -48,7 +48,7 @@ function Use-Unpin($item)
 #
 function Use-UnpinAll()
 {
-  Get-Unpinnable-Apps | %{ Use-Unpin($_) }
+  Get-UnpinnableApps | %{ Use-Unpin($_) }
 }
 
 #
@@ -84,12 +84,12 @@ function Use-Guard([string]$prompt)
 #
 # CLI command to remove all start tiles
 #
-# @option -y Disable user prompts
+# @option -y Confirm operation without user prompt.
 #
 function Remove-StartTiles
 {
   param(
-    $y = 0
+    [switch]$y = $false
   )
 
   Show-UnpinnableApps
